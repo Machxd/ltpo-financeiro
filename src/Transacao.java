@@ -43,13 +43,8 @@ class Transacao {
         this.tipo = tipo;
     }
 
-    public void exibirTransacao(){
-        System.out.printf("Descrição: %s",descricao );
-        System.out.printf("Valor: %2f",valor );
-        System.out.printf("Tipo: %s",tipo );
-
-
-
-
+    public void exibirTransacao() {
+        System.out.printf("%-20s %-10s R$ %.2f\n", descricao, tipo, valor);
     }
+
 }
